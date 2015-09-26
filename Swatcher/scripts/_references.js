@@ -9,3 +9,5 @@
 /// <reference path="../tests/unit/lib/boot.js" />
 /// <reference path="../tests/unit/lib/jasmine-html.js" />
 /// <reference path="../content/js/jquery.swatcher.js" />
+/// <reference path="../tests/integration/specs/swatcherselectbasiccolorstests.js" />
+/// <reference path="../tests/integration/lib/utility.js" />
