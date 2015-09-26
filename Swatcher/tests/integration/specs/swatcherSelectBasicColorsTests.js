@@ -59,4 +59,12 @@ describe('Example: Colors from a select list using basic web colors', function (
 
     });
 
+    it('Should set the background color of each swatch from the option value', function () {
+
+        $sut.swatcher();
+
+        expect($sut.next().find('li:first').css('background-color')).toBe('rgb(255, 0, 0)');
+
+    });
+
 });

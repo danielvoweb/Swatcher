@@ -10,7 +10,11 @@
 
         this.find('option').each(function () {
 
-            $list.append('<li />');
+            var $item = $('<li />');
+
+            $item.css('background-color', $(this).val());
+
+            $list.append($item);
 
         });
 
