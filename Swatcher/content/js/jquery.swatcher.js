@@ -12,6 +12,10 @@
             var value = $(this).val(),
                 $item = $('<li />');
 
+            if ($(this).data('swatcher-color')) {
+                value = $(this).data('swatcher-color');
+            }
+
             $item
                 .css('background-color', value)
                 .prop('title', value);
