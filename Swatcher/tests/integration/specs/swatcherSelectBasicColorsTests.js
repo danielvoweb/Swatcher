@@ -41,7 +41,7 @@ describe('Example: Colors from a select list using basic web colors', function (
 
     });
 
-    it('Should add the .swatcher class to the unordered list', function () {
+    it('Should add the ".swatcher" class to the unordered list', function () {
 
         $sut.swatcher();
 
@@ -67,7 +67,7 @@ describe('Example: Colors from a select list using basic web colors', function (
 
     });
 
-    it('Should add an .is-selected class when a swatch is clicked', function () {
+    it('Should add an ".is-selected" class when a swatch is clicked', function () {
 
         $sut.swatcher();
 
@@ -77,7 +77,7 @@ describe('Example: Colors from a select list using basic web colors', function (
 
     });
 
-    it('Should remove the .is-selected class from the current target once another swatch is clicked', function () {
+    it('Should remove the ".is-selected" class from the current target once another swatch is clicked', function () {
 
         $sut.swatcher();
 
@@ -86,6 +86,16 @@ describe('Example: Colors from a select list using basic web colors', function (
         $sut.next().find('li:nth-child(2)').click();
 
         expect($sut.next().find('li:first').hasClass('is-selected')).toBeFalsy();
+
+    });
+
+    it('Should add a title for each swatch from the option value', function () {
+
+        var expected = $sut.find('option:first').val();
+
+        $sut.swatcher();
+
+        expect($sut.next().find('li:first').prop('title')).toBe(expected);
 
     });
 
