@@ -5,9 +5,7 @@
     $.fn.swatcher = function (settings) {
 
         var $this = this,
-            $list;
-
-        $list = $('<ul class="swatcher" />');
+            $list = $('<ul class="swatcher" />');
 
         $this.find('option').each(function () {
 
