@@ -41,6 +41,14 @@ describe('Example: Colors from a select list using basic web colors', function (
 
     });
 
+    it('Should add the .swatcher class to the unordered list', function () {
+
+        $sut.swatcher();
+
+        expect($sut.next().hasClass('swatcher')).toBeTruthy();
+
+    });
+
     it('Should add an item for every option to the swatcher list', function () {
 
         var expected = $sut.find('option').length;

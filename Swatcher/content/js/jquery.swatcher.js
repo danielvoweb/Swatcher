@@ -6,7 +6,7 @@
 
         this.hide();
 
-        var $list = $('<ul />');
+        var $list = $('<ul class="swatcher" />');
 
         this.find('option').each(function () {
 
