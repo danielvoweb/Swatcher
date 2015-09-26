@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Swatcher - A jQuery Plugin</title>
+
+    <meta name="author" content="MidwayUSA" />
+    <meta name="description" content="Swatcher - A jQuery plugin for selecting dynamic colors from swatches" />
+
+    <link href="https://fonts.googleapis.com/css?family=Alice|Sacramento|Inconsolata" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="content/styles/jquery.swatcher.css" rel="stylesheet" />
+    <link href="content/styles/main.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <header>
+        <h1>Swatcher</h1>
+        <p>A jQuery plugin for selecting dynamic colors from swatches</p>
+    </header>
+
+    <section>
+
+        <h2>Introduction</h2>
+
+        <p>
+            Bacon ipsum dolor amet kielbasa kevin frankfurter tenderloin meatball capicola alcatra meatloaf prosciutto strip steak jowl andouille shoulder sausage. Kevin strip steak kielbasa corned beef cupim fatback.
+            Bacon ipsum dolor amet kielbasa kevin frankfurter tenderloin meatball capicola alcatra meatloaf prosciutto strip steak jowl andouille shoulder sausage. Kevin strip steak kielbasa corned beef cupim fatback.
+        </p>
+
+        <nav>
+            <ul class="fa-ul">
+                <li><i class="fa-li fa fa-angle-right"></i><a href="#example-from-select-basic-colors">Example: Colors from a select list using basic web colors</a></li>
+                <li><i class="fa-li fa fa-angle-right"></i><a href="#example-from-select-advanced-colors">Example: Colors from a select list using advanced colors</a></li>
+            </ul>
+            <ul class="fa-ul">
+                <li><i class="fa-li fa fa-angle-double-right"></i><a href="/tests/integration/index.html" target="_blank">DOM Integration Tests</a></li>
+                <li><i class="fa-li fa fa-angle-double-right"></i><a href="/tests/unit/index.html" target="_blank">Unit Tests</a></li>
+            </ul>
+            <ul class="fa-ul">
+                <li><i class="fa-li fa fa-github"></i><a href="https://github.com/DVo-MidwayUSA" target="_blank">GitHub: View Swatcher Source Code</a></li>
+            </ul>
+        </nav>
+
+        <h2>Examples</h2>
+
+        <div id="example-from-select-basic-colors">
+
+            <h3>Example: Colors from a select list using basic web colors</h3>
+
+            <p>
+                Bacon ipsum dolor amet kielbasa kevin frankfurter tenderloin meatball capicola alcatra meatloaf prosciutto strip steak jowl andouille shoulder sausage. Kevin strip steak kielbasa corned beef cupim fatback.
+            </p>
+
+            <code class="code">
+
+                <span class="code-note">Target DOM:</span>
+
+                <span>&lt;select&gt;</span>
+                <span class="code-indent">&lt;option&gt;Red&lt;/option&gt;</span>
+                <span class="code-indent">&lt;option&gt;Orange&lt;/option&gt;</span>
+                <span class="code-indent">&lt;option&gt;Yellow&lt;/option&gt;</span>
+                <span class="code-indent">&lt;option&gt;Green&lt;/option&gt;</span>
+                <span class="code-indent">&lt;option&gt;Blue&lt;/option&gt;</span>
+                <span class="code-indent">&lt;option&gt;Purple&lt;/option&gt;</span>
+                <span>&lt;/select&gt;</span>
+
+                <span class="code-note">Binding:</span>
+
+                <span>$('select').swatcher();</span>
+
+            </code>
+
+            <h4>Demo:</h4>
+
+            <div data-code-fragment>
+
+                <select>
+                    <option>Red</option>
+                    <option>Orange</option>
+                    <option>Yellow</option>
+                    <option>Green</option>
+                    <option>Blue</option>
+                    <option>Purple</option>
+                </select>
+
+            </div>
+
+        </div>
+
+        <div id="example-from-select-advanced-colors">
+
+            <h3>Example: Colors from a select list using advanced colors</h3>
+
+            <p>
+                Bacon ipsum dolor amet kielbasa kevin frankfurter tenderloin meatball capicola alcatra meatloaf prosciutto strip steak jowl andouille shoulder sausage. Kevin strip steak kielbasa corned beef cupim fatback.
+            </p>
+
+            <code class="code">
+
+            </code>
+
+            <h4>Demo:</h4>
+
+            <div data-code-fragment>
+
+                <select>
+                    <option data-swatcher-color="#CFF27E">Spring Green</option>
+                    <option data-swatcher-color="#F2DD6E">Yellow Squash</option>
+                    <option data-swatcher-color="#E5B25D">Pumpkin Orange</option>
+                    <option data-swatcher-color="#B87D4B">Autumn Leaves</option>
+                    <option data-swatcher-color="#523A34">Tree Brown</option>
+                </select>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="scripts/jquery-2.1.4.js"></script>
+    <script src="content/js/jquery.swatcher.js"></script>
+    <script>
+
+        (function ($) {
+
+            $('#example-from-select-basic-colors select').swatcher();
+
+            $('#example-from-select-advanced-colors select').swatcher();
+
+        })(jQuery);
+
+    </script>
+
+</body>
+</html>
