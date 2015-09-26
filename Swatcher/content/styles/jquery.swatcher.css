@@ -1,12 +1,12 @@
 .swatcher {
-    margin: 1em 0;
+    margin: 1.5em 0;
 }
 
 .swatcher li {
     cursor: pointer;
     display: inline-block;
-    height: 2em;
-    width: 2em;
+    height: 3em;
+    width: 3em;
     z-index: 0;
 }
 

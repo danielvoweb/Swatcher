@@ -148,7 +148,7 @@ table {
 body {
   color: #333;
   font-family: 'Alice', serif;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 body h1,
 body h2 {
@@ -179,7 +179,7 @@ body section h2 {
 }
 body section h3 {
   font-size: 1.2em;
-  margin: 10em 0 1em 0;
+  margin: 5em 0 1em 0;
 }
 body section nav ul {
   margin: 1em 0;
