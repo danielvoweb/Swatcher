@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-function loadWorkspace(selector, domUrl, sutUrl, done) {
+function loadWorkspace(selector, domUrl, sutUrl) {
 
     $.ajax(
         {
@@ -21,8 +21,6 @@ function loadWorkspace(selector, domUrl, sutUrl, done) {
             cache: false,
             url: sutUrl
         });
-
-    done();
 
 }
 
