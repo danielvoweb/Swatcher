@@ -68,6 +68,7 @@
     <Content Include="content\js\jquery.swatcher.js" />
     <Content Include="content\styles\jquery.swatcher.css" />
     <Content Include="content\styles\main.css" />
+    <Content Include="favicon.ico" />
     <Content Include="index.html" />
     <Content Include="tests\content\jasmine.css" />
     <Content Include="packages.config" />

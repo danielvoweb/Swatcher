@@ -1,0 +1,14 @@
+.swatcher {
+    margin: 1em 0;
+}
+
+.swatcher li {
+    cursor: pointer;
+    display: inline-block;
+    height: 2em;
+    width: 2em;
+}
+
+.swatcher li:hover {
+    opacity: 0.8;
+}

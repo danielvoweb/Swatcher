@@ -21,7 +21,7 @@ describe('Example: Colors from a select list using basic web colors', function (
 
         done();
 
-        //clearWorkspace();
+        clearWorkspace();
 
     });
 

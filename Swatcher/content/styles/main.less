@@ -1,8 +1,95 @@
 ﻿@import '_reset.less';
 
-@import '_reset.less';
+@import '_helpers.less';
 
 body {
+    color: #333;
+    font-family: 'Alice', serif;
+    font-size: 1.3em;
 
+    h1, h2 {
+        font-family: 'Sacramento', cursive;
+    }
 
+    header {
+        background-color: #333;
+        color: #999;
+        padding: 2em 4em;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+
+        .drop-shadow();
+
+        h1 {
+            color: #fff;
+            font-size: 3em;
+        }
+    }
+
+    section {
+        margin: 10em 4em 2em 4em;
+
+        h2 {
+            font-size: 2em;
+            margin: 2.5em 0 1em 0;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            margin: 10em 0 1em 0;
+        }
+
+        nav {
+            ul {
+                margin: 1em 0;
+
+                li {
+                    margin: 0.5em 0;
+
+                    a {
+                        color: #666;
+                        text-decoration: none;
+
+                        &:hover {
+                            border-bottom: 1px dotted #999;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        code.code {
+            background-color: #eee;
+            border: 1px solid #eee;
+            border-bottom: 1px solid #cfcfcf;
+            display: block;
+            font-family: 'Inconsolata';
+            padding: 1.5em;
+
+            .border-radius();
+
+            span {
+                display: block;
+                margin: 0.5em 0;
+
+                &.code-indent {
+                    margin-left: 2em;
+                }
+
+                &.code-note {
+                    color: #999;
+                    font-size: 0.8em;
+                    margin: 1.5em 0;
+                }
+            }
+        }
+
+        p {
+            line-height: 1.5em;
+            margin-bottom: 1.5em;
+        }
+    }
 }
