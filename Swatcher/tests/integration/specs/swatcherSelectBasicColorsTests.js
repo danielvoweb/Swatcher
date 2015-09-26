@@ -77,4 +77,16 @@ describe('Example: Colors from a select list using basic web colors', function (
 
     });
 
+    it('Should remove the .is-selected class from the current target once another swatch is clicked', function () {
+
+        $sut.swatcher();
+
+        $sut.next().find('li:first').click();
+
+        $sut.next().find('li:nth-child(2)').click();
+
+        expect($sut.next().find('li:first').hasClass('is-selected')).toBeFalsy();
+
+    });
+
 });

@@ -22,6 +22,8 @@
 
         $list.on('click', 'li', function (e) {
 
+            $list.find('li').not($(e.currentTarget)).removeClass('is-selected');
+
             $(e.currentTarget).addClass('is-selected');
 
         });

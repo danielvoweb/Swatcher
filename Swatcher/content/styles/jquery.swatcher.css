@@ -7,8 +7,16 @@
     display: inline-block;
     height: 2em;
     width: 2em;
+    z-index: 0;
 }
 
 .swatcher li:hover {
     opacity: 0.8;
+}
+
+.swatcher li.is-selected {
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
