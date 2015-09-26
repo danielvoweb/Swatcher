@@ -2,9 +2,19 @@
 
     'use strict';
 
-    $.fn.swatcher = function (options) {
+    $.fn.swatcher = function (settings) {
 
         this.hide();
+
+        var $list = $('<ul />');
+
+        this.find('option').each(function () {
+
+            $list.append('<li />');
+
+        });
+
+        this.after($list);
 
         return this;
 

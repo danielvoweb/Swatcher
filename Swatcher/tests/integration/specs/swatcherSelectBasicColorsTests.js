@@ -4,7 +4,7 @@ describe('Example: Colors from a select list using basic web colors', function (
 
     var $sut;
 
-    beforeAll(function (done) {
+    beforeEach(function (done) {
 
         loadWorkspace(
             '#example-from-select-basic-colors',
@@ -21,7 +21,7 @@ describe('Example: Colors from a select list using basic web colors', function (
 
         done();
 
-        clearWorkspace();
+        //clearWorkspace();
 
     });
 
@@ -30,6 +30,24 @@ describe('Example: Colors from a select list using basic web colors', function (
         $sut.swatcher();
 
         expect($sut.is(':visible')).toBeFalsy();
+
+    });
+
+    it('Should create a unordered swatcher list', function () {
+
+        $sut.swatcher();
+
+        expect($sut.next().prop('tagName')).toBe('UL');
+
+    });
+
+    it('Should add an item for every option to the swatcher list', function () {
+
+        var expected = $sut.find('option').length;
+
+        $sut.swatcher();
+
+        expect($sut.next().find('li').length).toBe(expected);
 
     });
 
