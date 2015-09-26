@@ -4,11 +4,14 @@
 
     $.fn.swatcher = function (settings) {
 
-        this.hide();
+        var $list,
+            $this = this;
 
-        var $list = $('<ul class="swatcher" />');
+        $this.hide();
 
-        this.find('option').each(function () {
+        $list = $('<ul class="swatcher" />');
+
+        $this.find('option').each(function () {
 
             var value = $(this).val(),
                 $item = $('<li />');
@@ -21,7 +24,7 @@
 
         });
 
-        this.after($list);
+        $this.after($list);
 
         $list.on('click', 'li', function (e) {
 
@@ -29,9 +32,11 @@
 
             $(e.currentTarget).addClass('is-selected');
 
+            $this.val($(e.currentTarget).prop('title'));
+
         });
 
-        return this;
+        return $this;
 
     };
 

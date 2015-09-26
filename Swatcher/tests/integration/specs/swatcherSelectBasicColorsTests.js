@@ -7,7 +7,7 @@ describe('Example: Colors from a select list using basic web colors', function (
     beforeEach(function (done) {
 
         loadWorkspace(
-            '#example-from-select-basic-colors',
+            '#example-from-select-basic-colors [data-code-fragment]',
             '/index.html',
             '/content/js/jquery.swatcher.js');
 
@@ -96,6 +96,16 @@ describe('Example: Colors from a select list using basic web colors', function (
         $sut.swatcher();
 
         expect($sut.next().find('li:first').prop('title')).toBe(expected);
+
+    });
+
+    it('Should select the corresponding option when a swatch is selected', function () {
+
+        $sut.swatcher();
+
+        $sut.next().find('li:first').click();
+
+        expect($sut.val()).toBe($sut.next().find('li:first').prop('title'));
 
     });
 
