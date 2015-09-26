@@ -10,14 +10,15 @@
         $this.find('option').each(function () {
 
             var value = $(this).val(),
+                color = value,
                 $item = $('<li />');
 
             if ($(this).data('swatcher-color')) {
-                value = $(this).data('swatcher-color');
+                color = $(this).data('swatcher-color');
             }
 
             $item
-                .css('background-color', value)
+                .css('background-color', color)
                 .prop('title', value);
 
             $list.append($item);
