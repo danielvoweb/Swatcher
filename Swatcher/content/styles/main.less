@@ -12,14 +12,13 @@ body {
     }
 
     header {
-        background-color: #333;
+        background: repeating-linear-gradient( -55deg, #222, #222 10px, #333 10px, #333 20px );
         color: #999;
         padding: 2em 4em;
         width: 100%;
         position: fixed;
         top: 0;
         z-index: 100;
-
         .drop-shadow();
 
         h1 {
@@ -55,7 +54,6 @@ body {
                         &:hover {
                             border-bottom: 1px dotted #999;
                         }
-
                     }
                 }
             }
@@ -68,7 +66,6 @@ body {
             display: block;
             font-family: 'Inconsolata';
             padding: 1.5em;
-
             .border-radius();
 
             span {
