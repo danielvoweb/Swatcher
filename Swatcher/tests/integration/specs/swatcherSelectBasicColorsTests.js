@@ -67,4 +67,14 @@ describe('Example: Colors from a select list using basic web colors', function (
 
     });
 
+    it('Should add an .is-selected class when a swatch is clicked', function () {
+
+        $sut.swatcher();
+
+        $sut.next().find('li:first').click();
+
+        expect($sut.next().find('li:first').hasClass('is-selected')).toBeTruthy();
+
+    });
+
 });

@@ -20,6 +20,12 @@
 
         this.after($list);
 
+        $list.on('click', 'li', function (e) {
+
+            $(e.currentTarget).addClass('is-selected');
+
+        });
+
         return this;
 
     };
