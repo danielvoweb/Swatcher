@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -89,6 +90,7 @@
     <Content Include="tests\integration\lib\utility.js" />
     <Content Include="tests\integration\specs\swatcherSelectAdvancedColorsTests.js" />
     <Content Include="tests\integration\specs\swatcherSelectBasicColorsTests.js" />
+    <Content Include="tests\integration\specs\swatcherTests.js" />
     <Content Include="tests\unit\index.html" />
     <Content Include="tests\unit\lib\boot.js" />
     <Content Include="tests\unit\lib\jasmine-html.js" />
