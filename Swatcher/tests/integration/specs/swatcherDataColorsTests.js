@@ -39,6 +39,14 @@ describe('Example: Passed in colors to Swatcher options', function () {
 
     });
 
+    it('Should set the background color of each swatch from the passed in "colors" setting', function () {
+
+        $target.swatcher(settings);
+
+        expect($target.next().find('li:first').css('background-color')).toBe('rgb(240, 182, 127)');
+
+    });
+
     sharedSwatcherTests(settings);
 
 });

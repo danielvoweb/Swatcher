@@ -19,10 +19,8 @@
 
 
                 $item
-                    .data('swatcher-color', value.color);
-                $item.val(value.name);
-
-                console.log($item.data('swatcher-color'));
+                    .data('swatcher-color', value.color)
+                .val(value.name);
 
                 $this.append($item);
 
