@@ -144,6 +144,24 @@
 
             <code class="code">
 
+                <span class="code-note">Target DOM:</span>
+
+                <span>&lt;select&gt;&lt;/select&gt;</span>
+
+                <span class="code-note">Binding:</span>
+
+                <span>$('select').swatcher(</span>
+                <span class="code-indent">{</span>
+                <span class="code-indent-indent">colors:</span>
+                <span class="code-indent-indent-indent">[</span>
+                <span class="code-indent-indent-indent-indent">{ name: 'Salmon Pink', color: '#F0B67F' },</span>
+                <span class="code-indent-indent-indent-indent">{ name: 'Crimson Tide', color: '#FE5F55' },</span>
+                <span class="code-indent-indent-indent-indent">{ name: 'Slate Grey', color: '#D6D1B1' },</span>
+                <span class="code-indent-indent-indent-indent">{ name: 'Sea Salt', color: '#EEF5DB' },</span>
+                <span class="code-indent-indent-indent-indent">{ name: 'Aquamarine', color: '#C7EFCF' }</span>
+                <span class="code-indent-indent-indent">]</span>
+                <span class="code-indent-indent">});</span>
+
             </code>
 
             <h4>Demo:</h4>
@@ -167,6 +185,18 @@
             $('#example-from-select-basic-colors select').swatcher();
 
             $('#example-from-select-advanced-colors select').swatcher();
+
+            $('#example-colors-from-data select').swatcher(
+                {
+                    colors:
+                        [
+                            { name: 'Salmon Pink', color: '#F0B67F' },
+                            { name: 'Crimson Tide', color: '#FE5F55' },
+                            { name: 'Slate Grey', color: '#D6D1B1' },
+                            { name: 'Sea Salt', color: '#EEF5DB' },
+                            { name: 'Aquamarine', color: '#C7EFCF' }
+                        ]
+                });
 
         })(jQuery);
 
