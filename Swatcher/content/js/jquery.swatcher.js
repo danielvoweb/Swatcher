@@ -15,14 +15,10 @@
 
             $.each(settings.colors, function (index, value) {
 
-                var $item = $('<option />');
-
-
-                $item
-                    .data('swatcher-color', value.color)
-                .val(value.name);
-
-                $this.append($item);
+                $this.append(
+                    $('<option />')
+                        .data('swatcher-color', value.color)
+                        .val(value.name));
 
             });
 
@@ -31,18 +27,16 @@
         $this.find('option').each(function () {
 
             var value = $(this).val(),
-                color = value,
-                $item = $('<li />');
+                color = value;
 
             if ($(this).data('swatcher-color')) {
                 color = $(this).data('swatcher-color');
             }
 
-            $item
-                .css('background-color', color)
-                .prop('title', value);
-
-            $list.append($item);
+            $list.append(
+                $('<li />')
+                    .css('background-color', color)
+                    .prop('title', value));
 
         });
 
