@@ -8,6 +8,7 @@
 /// <reference path="../tests/integration/lib/boot.js" />
 /// <reference path="../tests/integration/lib/jasmine-html.js" />
 /// <reference path="../tests/integration/lib/utility.js" />
+/// <reference path="../tests/integration/specs/swatcherdatacolorstests.js" />
 /// <reference path="../tests/integration/specs/swatcherselectadvancedcolorstests.js" />
 /// <reference path="../tests/integration/specs/swatcherselectbasiccolorstests.js" />
 /// <reference path="../tests/integration/specs/swatchertests.js" />

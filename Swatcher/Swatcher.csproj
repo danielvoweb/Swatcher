@@ -88,6 +88,7 @@
     <Content Include="tests\integration\lib\boot.js" />
     <Content Include="tests\integration\lib\jasmine-html.js" />
     <Content Include="tests\integration\lib\utility.js" />
+    <Content Include="tests\integration\specs\swatcherDataColorsTests.js" />
     <Content Include="tests\integration\specs\swatcherSelectAdvancedColorsTests.js" />
     <Content Include="tests\integration\specs\swatcherSelectBasicColorsTests.js" />
     <Content Include="tests\integration\specs\swatcherTests.js" />

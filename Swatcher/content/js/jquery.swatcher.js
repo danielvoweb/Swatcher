@@ -4,8 +4,31 @@
 
     $.fn.swatcher = function (settings) {
 
+        settings = $.extend({
+            colors: []
+        }, settings);
+
         var $this = this,
             $list = $('<ul class="swatcher" />');
+
+        if (settings.colors.length > 0) {
+
+            $.each(settings.colors, function (index, value) {
+
+                var $item = $('<option />');
+
+
+                $item
+                    .data('swatcher-color', value.color);
+                $item.val(value.name);
+
+                console.log($item.data('swatcher-color'));
+
+                $this.append($item);
+
+            });
+
+        }
 
         $this.find('option').each(function () {
 
