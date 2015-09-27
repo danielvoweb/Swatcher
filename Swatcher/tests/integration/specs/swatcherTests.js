@@ -12,7 +12,7 @@ function sharedSwatcherTests() {
 
     describe('(shared)', function () {
 
-        it('Should hide selected select element', function () {
+        it('Should hide selected plugin element', function () {
 
             $target.swatcher();
 
