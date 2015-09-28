@@ -172,6 +172,35 @@
 
             </div>
 
+        </div>     
+        
+        <div id="example-using-expand-selected-option">
+            
+            <h3>Example: Using the expand selected Swatcher option</h3>
+            
+            <p>
+                Bacon ipsum dolor amet kielbasa kevin frankfurter tenderloin meatball capicola alcatra meatloaf prosciutto strip steak jowl andouille shoulder sausage. Kevin strip steak kielbasa corned beef cupim fatback.
+            </p>
+
+            <code class="code">
+                
+            </code>
+                
+            <h4>Demo:</h4>
+            
+            <div data-code-fragment>
+                
+                <select>
+                    <option>Red</option>
+                    <option>Orange</option>
+                    <option>Yellow</option>
+                    <option>Green</option>
+                    <option>Blue</option>
+                    <option>Purple</option>
+                </select>              
+
+            </div>
+
         </div>
 
     </section>
@@ -196,6 +225,11 @@
                             { name: 'Sea Salt', color: '#EEF5DB' },
                             { name: 'Aquamarine', color: '#C7EFCF' }
                         ]
+                });
+
+            $('#example-using-expand-selected-option select').swatcher(
+                {
+                   expand: true
                 });
 
         })(jQuery);
