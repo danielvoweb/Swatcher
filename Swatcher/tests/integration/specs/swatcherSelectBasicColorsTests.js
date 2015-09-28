@@ -11,7 +11,8 @@ describe('Example: Colors from a select list using basic web colors', function (
             '/index.html',
             '/content/js/jquery.swatcher.js');
 
-        $target = $('#test-workspace').find('select');
+        $target = $('#test-workspace').find('select')
+            .swatcher();
 
         done();
 
@@ -26,8 +27,6 @@ describe('Example: Colors from a select list using basic web colors', function (
     });
 
     it('Should set the background color of each swatch from the option value', function () {
-
-        $target.swatcher();
 
         expect($target.next().find('li:first').css('background-color')).toBe('rgb(255, 0, 0)');
 

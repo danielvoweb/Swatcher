@@ -11,7 +11,7 @@ describe('Example: Colors from a select list using advanced colors', function ()
             '/index.html',
             '/content/js/jquery.swatcher.js');
 
-        $target = $('#test-workspace').find('select');
+        $target = $('#test-workspace').find('select').swatcher();
 
         done();
 
@@ -25,10 +25,7 @@ describe('Example: Colors from a select list using advanced colors', function ()
 
     });
 
-    
     it('Should set the background color of each swatch from the "swatcher-color" data attribute', function () {
-
-        $target.swatcher();
 
         expect($target.next().find('li:first').css('background-color')).toBe('rgb(207, 242, 126)');
 
