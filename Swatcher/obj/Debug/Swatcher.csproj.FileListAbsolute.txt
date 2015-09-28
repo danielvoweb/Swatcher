@@ -1,0 +1,6 @@
+C:\Users\Daniel\Documents\GitHub\Swatcher\Swatcher\bin\Swatcher.dll.config
+C:\Users\Daniel\Documents\GitHub\Swatcher\Swatcher\bin\Swatcher.dll
+C:\Users\Daniel\Documents\GitHub\Swatcher\Swatcher\bin\Swatcher.pdb
+C:\Users\Daniel\Documents\GitHub\Swatcher\Swatcher\obj\Debug\Swatcher.csprojResolveAssemblyReference.cache
+C:\Users\Daniel\Documents\GitHub\Swatcher\Swatcher\obj\Debug\Swatcher.dll
+C:\Users\Daniel\Documents\GitHub\Swatcher\Swatcher\obj\Debug\Swatcher.pdb
