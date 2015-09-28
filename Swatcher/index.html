@@ -34,6 +34,7 @@
                 <li><i class="fa-li fa fa-angle-right"></i><a href="#example-from-select-basic-colors">Example: Colors from a select list using basic web colors</a></li>
                 <li><i class="fa-li fa fa-angle-right"></i><a href="#example-from-select-advanced-colors">Example: Colors from a select list using advanced colors</a></li>
                 <li><i class="fa-li fa fa-angle-right"></i><a href="#example-colors-from-data">Example: Passed in colors to Swatcher options</a></li>
+                <li><i class="fa-li fa fa-angle-right"></i><a href="#example-using-expand-selected-option">Example: Using the expand selected Swatcher option</a></li>
             </ul>
             <ul class="fa-ul">
                 <li><i class="fa-li fa fa-flask"></i><a href="/tests/integration/index.html" target="_blank">DOM Integration Tests</a></li>
@@ -183,7 +184,22 @@
             </p>
 
             <code class="code">
-                
+                    
+                <span class="code-note">Target DOM:</span>
+
+                <span>&lt;select&gt;</span>
+                <span class="code-indent">&lt;option data-swatcher-color="#CFF27E"&gt;Spring Green&lt;/option&gt;</span>
+                <span class="code-indent">&lt;option data-swatcher-color="#F2DD6E"&gt;Yellow Squash&lt;/option&gt;</span>
+                <span class="code-indent">&lt;option data-swatcher-color="#E5B25D"&gt;Pumpkin Orange&lt;/option&gt;</span>
+                <span class="code-indent">&lt;option data-swatcher-color="#B87D4B"&gt;Autumn Leaves&lt;/option&gt;</span>
+                <span class="code-indent">&lt;option data-swatcher-color="#523A34"&gt;Tree Brown&lt;/option&gt;</span>
+                <span class="code-indent">&lt;option data-swatcher-color="#02010A"&gt;Midnight Black&lt;/option&gt;</span>
+                <span>&lt;/select&gt;</span>
+
+                <span class="code-note">Binding:</span>
+
+                <span>$('select').swatcher({ expandable: true });</span>
+
             </code>
                 
             <h4>Demo:</h4>
