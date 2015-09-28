@@ -29,9 +29,9 @@ describe('Example: Using the expand selected Swatcher option', function() {
 
     it('Should add an ".is-expanded" class when a swatch is clicked', function() {
 
-        $observed.find('li:first').click();
+        $target = $('#test-workspace').find('select').swatcher({ expandable: true });
 
-        $observed.find('li:nth-child(2)').click();
+        $observed.find('li:first').click();
 
         expect($observed.find('li:first').prop('class')).toContain('is-expanded');
 
