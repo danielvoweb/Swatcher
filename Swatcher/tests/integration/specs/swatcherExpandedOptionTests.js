@@ -35,6 +35,16 @@ describe('Example: Using the expand selected Swatcher option', function() {
 
     });
 
+    it('Should remove the ".is-expanded" class from the current target once another swatch is clicked', function () {
+
+        $observed.find('li:first').click();
+
+        $observed.find('li:nth-child(2)').click();
+
+        expect($observed.find('li:first').hasClass('is-expanded')).toBeFalsy();
+
+    });
+
     sharedSwatcherTests();
 
 });
