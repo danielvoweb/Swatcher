@@ -11,6 +11,10 @@
         z-index: 0;
     }
 
+        .swatcher li.is-expanded {
+            margin: 0 1em;
+        }
+
     .swatcher.has-selected-swatch li {
         opacity: 0.5;
     }

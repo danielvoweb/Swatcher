@@ -11,7 +11,7 @@ describe('Example: Using the expand selected Swatcher option', function() {
             '/index.html',
             '/content/js/jquery.swatcher.js');
 
-        $target = $('#test-workspace').find('select').swatcher();
+        $target = $('#test-workspace').find('select').swatcher({ expandable: true });
 
         $observed = $('#test-workspace').find('ul.swatcher');
 
@@ -28,8 +28,6 @@ describe('Example: Using the expand selected Swatcher option', function() {
     });
 
     it('Should add an ".is-expanded" class when a swatch is clicked', function() {
-
-        $target = $('#test-workspace').find('select').swatcher({ expandable: true });
 
         $observed.find('li:first').click();
 
