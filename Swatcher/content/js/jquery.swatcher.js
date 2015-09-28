@@ -45,7 +45,7 @@
 
             var $currentTarget = $(e.currentTarget);
 
-            $list.find('li').not($currentTarget).removeClass('is-selected');
+            $list.find('li').not($currentTarget).removeClass('is-selected').removeClass('is-expanded');
 
             $currentTarget.addClass('is-selected');
 
