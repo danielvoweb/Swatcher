@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Publish\Swatcher</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Swatcher.dll">
+      <publishTime>09/28/2015 08:55:30</publishTime>
+    </File>
+    <File Include="content/js/jquery.swatcher.js">
+      <publishTime>09/28/2015 08:23:52</publishTime>
+    </File>
+    <File Include="content/styles/jquery.swatcher.css">
+      <publishTime>09/28/2015 08:23:52</publishTime>
+    </File>
+    <File Include="content/styles/main.css">
+      <publishTime>09/28/2015 08:55:29</publishTime>
+    </File>
+    <File Include="content/styles/main.less">
+      <publishTime>09/28/2015 08:23:52</publishTime>
+    </File>
+    <File Include="content/styles/_helpers.less">
+      <publishTime>09/28/2015 08:23:52</publishTime>
+    </File>
+    <File Include="content/styles/_reset.less">
+      <publishTime>09/28/2015 08:23:52</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>09/28/2015 08:23:52</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>09/28/2015 08:23:52</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>09/28/2015 08:23:53</publishTime>
+    </File>
+    <File Include="scripts/boot.js">
+      <publishTime>09/28/2015 08:23:53</publishTime>
+    </File>
+    <File Include="scripts/console.js">
+      <publishTime>09/28/2015 08:23:53</publishTime>
+    </File>
+    <File Include="scripts/jasmine-html.js">
+      <publishTime>09/28/2015 08:23:53</publishTime>
+    </File>
+    <File Include="scripts/jasmine.js">
+      <publishTime>09/28/2015 08:23:53</publishTime>
+    </File>
+    <File Include="scripts/jquery-2.1.4.js">
+      <publishTime>09/28/2015 08:23:53</publishTime>
+    </File>
+    <File Include="scripts/jquery-2.1.4.min.js">
+      <publishTime>09/28/2015 08:23:53</publishTime>
+    </File>
+    <File Include="scripts/jquery-2.1.4.min.map">
+      <publishTime>09/28/2015 08:23:53</publishTime>
+    </File>
+    <File Include="tests/content/jasmine.css">
+      <publishTime>09/28/2015 08:23:53</publishTime>
+    </File>
+    <File Include="tests/integration/index.html">
+      <publishTime>09/28/2015 08:23:53</publishTime>
+    </File>
+    <File Include="tests/integration/lib/boot.js">
+      <publishTime>09/28/2015 08:23:53</publishTime>
+    </File>
+    <File Include="tests/integration/lib/jasmine-html.js">
+      <publishTime>09/28/2015 08:23:53</publishTime>
+    </File>
+    <File Include="tests/integration/lib/utility.js">
+      <publishTime>09/28/2015 08:23:53</publishTime>
+    </File>
+    <File Include="tests/integration/specs/swatcherDataColorsTests.js">
+      <publishTime>09/28/2015 08:23:53</publishTime>
+    </File>
+    <File Include="tests/integration/specs/swatcherExpandedOptionTests.js">
+      <publishTime>09/28/2015 08:23:53</publishTime>
+    </File>
+    <File Include="tests/integration/specs/swatcherSelectAdvancedColorsTests.js">
+      <publishTime>09/28/2015 08:23:53</publishTime>
+    </File>
+    <File Include="tests/integration/specs/swatcherSelectBasicColorsTests.js">
+      <publishTime>09/28/2015 08:23:53</publishTime>
+    </File>
+    <File Include="tests/integration/specs/swatcherTests.js">
+      <publishTime>09/28/2015 08:23:53</publishTime>
+    </File>
+    <File Include="tests/unit/index.html">
+      <publishTime>09/28/2015 08:23:53</publishTime>
+    </File>
+    <File Include="tests/unit/lib/boot.js">
+      <publishTime>09/28/2015 08:23:53</publishTime>
+    </File>
+    <File Include="tests/unit/lib/jasmine-html.js">
+      <publishTime>09/28/2015 08:23:53</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/28/2015 08:55:30</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
