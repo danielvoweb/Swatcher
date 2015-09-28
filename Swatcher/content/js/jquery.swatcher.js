@@ -50,6 +50,8 @@
 
             $this.val($currentTarget.prop('title'));
 
+            $list.addClass('has-selected-swatch');
+
         });
 
         return $this.hide().after($list);
