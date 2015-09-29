@@ -46,6 +46,16 @@ function sharedSwatcherTests() {
 
         });
 
+        it('Should remove the ".is-selected" class when a selected swatch is clicked', function () {
+
+            $observed.find('li:first').click();
+
+            $observed.find('li:first').click();
+
+            expect($observed.find('li:first').hasClass('is-selected')).toBeFalsy();
+
+        });
+
         it('Should add a ".has-selected-swatch" class when a swatch is selected', function() {
 
             $observed.find('li:first').click();
