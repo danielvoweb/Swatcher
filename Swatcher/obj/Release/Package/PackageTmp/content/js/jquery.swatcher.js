@@ -5,8 +5,7 @@
     $.fn.swatcher = function (settings) {
 
         settings = $.extend({
-            colors: [],
-            expandable: false
+            colors: []
         }, settings);
 
         var $this = this,
@@ -45,19 +44,11 @@
 
             var $currentTarget = $(e.currentTarget);
 
-            $list.find('li').not($currentTarget).removeClass('is-selected').removeClass('is-expanded');
+            $list.find('li').not($currentTarget).removeClass('is-selected');
 
             $currentTarget.addClass('is-selected');
 
-            if (settings.expandable) {
-
-                $currentTarget.addClass('is-expanded');
-
-            }
-
             $this.val($currentTarget.prop('title'));
-
-            $list.addClass('has-selected-swatch');
 
         });
 
