@@ -52,7 +52,7 @@ function sharedSwatcherTests() {
 
             $observed.find('li:first').click();
 
-            expect($observed.find('li:first').hasClass('is-selected')).toBeFalsy();
+            expect($observed.find('li:first').prop('class')).not.toContain('is-selected');
 
         });
 

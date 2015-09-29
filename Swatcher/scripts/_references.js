@@ -13,5 +13,6 @@
 /// <reference path="../tests/integration/specs/swatcherselectadvancedcolorstests.js" />
 /// <reference path="../tests/integration/specs/swatcherselectbasiccolorstests.js" />
 /// <reference path="../tests/integration/specs/swatchertests.js" />
+/// <reference path="../tests/integration/specs/swatchertoggleoptiontests.js" />
 /// <reference path="../tests/unit/lib/boot.js" />
 /// <reference path="../tests/unit/lib/jasmine-html.js" />
